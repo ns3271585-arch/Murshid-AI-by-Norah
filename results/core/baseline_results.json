@@ -1,0 +1,20 @@
+[
+  {
+    "trace_id": "63ea2df1-2704-4aa3-812c-061bd0299b0b",
+    "answer": "يمكنك متابعة حالة طلبك باستخدام رقم المرجع.",
+    "model": "training-mock",
+    "latency_ms": 0.0822
+  },
+  {
+    "trace_id": "ab81291f-60bc-4a98-ab72-4cda92286878",
+    "answer": "You can check your application status using its reference number.",
+    "model": "training-mock",
+    "latency_ms": 0.0276
+  },
+  {
+    "trace_id": "57b06bcd-ab0e-4013-8ee2-e783bcdfa997",
+    "answer": "ما الخدمة التي تحتاج مساعدة بشأنها؟",
+    "model": "training-mock",
+    "latency_ms": 0.218
+  }
+]
