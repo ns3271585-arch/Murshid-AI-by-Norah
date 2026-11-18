@@ -97,6 +97,14 @@ The cache is restricted to the two exact public FAQ questions, uses a 300-second
 
 The real-model homework keyword score is only a proxy for the presence of the words *reference* and *number*—it is **not semantic accuracy**. Inference time varies across runtimes. The cost estimate in the core report is illustrative, not actual expenditure.
 
+### Evaluation Notes
+
+The Day 1 baseline tests include the exact Arabic FAQ question `كيف أتابع طلبي؟`, using the Arabic question mark (`؟`), consistent with the reference input.
+
+The core application passed all ten golden tests (100%). The exact-response caching experiment reduced mock-client calls from 3 to 1, achieving a 66.7% cache hit rate.
+
+**Recommendation:** Murshid is suitable for demonstrating LLM application engineering concepts in a controlled synthetic training environment. Before real-world deployment, stronger authentication, privacy safeguards, broader testing, and evaluation with a live language model would be required.
+
 ## Limitations and Future Work
 
 The core assistant has finite rule-based behavior, limited example guardrails, a synthetic session instead of real authentication, and no real service integration. Passing fixed test cases does not establish general reliability or production readiness. Improvements could include real authentication, controlled model tool-calling, more comprehensive privacy and adversarial testing, and semantic evaluation on a larger dataset.
