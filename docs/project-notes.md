@@ -102,3 +102,28 @@ The independent homework notebooks are located in `homework/` and must be run se
 ## 10. Possible Improvements
 
 Future development could introduce real authentication, controlled LLM tool calling, stronger privacy safeguards, more comprehensive adversarial testing, and semantic evaluation on a larger dataset.
+
+## 11. Final Evaluation and Recommendation
+
+### Evaluation Setup
+
+**Evaluation Date:** 2026-11-17
+
+The final evaluation uses the fictional `synthetic-v1` dataset, a deterministic `FakeClient`, and the `mock` execution mode. The prompt version is `v1`, and the service directory version is `dir-v1`.
+
+The evaluation includes ten golden test cases and a controlled before-and-after caching experiment.
+
+### Results
+
+All ten golden test cases passed (100%). The caching experiment reduced mock-client calls from 3 to 1, achieving a 66.7% cache hit rate.
+
+The hypothetical cost is $0.0036 per request. This is an illustrative calculation, not actual API spending.
+
+### Recommendation
+
+Murshid successfully demonstrates structured validation, authorized read-only access, input guardrails, and exact-response caching in a controlled training environment.
+
+Before broader use, the application would require real authentication, stronger privacy and security controls, a larger evaluation dataset, semantic answer-quality testing, and validation with a real language model.
+
+The current results demonstrate correct behavior for the defined synthetic test cases only and do not establish production readiness.
+
